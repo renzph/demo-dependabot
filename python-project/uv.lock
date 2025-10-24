@@ -1,0 +1,33 @@
+version = 1
+revision = 3
+requires-python = ">=3.12"
+
+[[package]]
+name = "python-project"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "requests" },
+    { name = "sympy" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "requests", specifier = "<=2.0.0" },
+    { name = "sympy", specifier = "<1.0.0" },
+]
+
+[[package]]
+name = "requests"
+version = "2.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/8e/88/102742c48605aef8d39fa719d932c67783d789679628fa1433cb4b2c7a2a/requests-2.0.0.tar.gz", hash = "sha256:78536038f54cff6ade3be6863403146665b5a3923dd61108c98d8b64141f9d70", size = 362994, upload-time = "2013-09-24T18:39:33.154Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/bf/78/be2b4c440ea767336d8448fe671fe1d78ca499e49d77dac90f92191cca0e/requests-2.0.0-py2.py3-none-any.whl", hash = "sha256:2ef65639cb9600443f85451df487818c31f993ab288f313d29cc9db4f3cbe6ed", size = 391141, upload-time = "2013-11-15T19:09:51.527Z" },
+]
+
+[[package]]
+name = "sympy"
+version = "0.7.6.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a0/b0/abf09d30361e93ef7c8f332739975d0f04650d3bf887525cebc14bf0ac91/sympy-0.7.6.1.tar.gz", hash = "sha256:1fc272b51091aabe7d07f1bf9f0a47f3e28657fb2bec52bf3ef0e8f159f5f564", size = 6431571, upload-time = "2015-09-03T22:13:26.872Z" }
