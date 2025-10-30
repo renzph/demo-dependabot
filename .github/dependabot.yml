@@ -17,3 +17,5 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+      time: "09:30"
+      timezone: "Europe/London"
